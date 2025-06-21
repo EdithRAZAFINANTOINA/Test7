@@ -1,16 +1,16 @@
-# -*- coding: utf-8 -*-
+-*- coding: utf-8 -*-
 
-# from odoo import models, fields, api
+from odoo import models, fields, api
 
 
-# class essaie(models.Model):
-#     _name = 'essaie.essaie'
-#     _description = 'essaie.essaie'
+class essaie(models.Model):
+    _name = 'essaie.essaie'
+    _description = 'essaie.essaie'
 
-#     name = fields.Char()
-#     value = fields.Integer()
-#     value2 = fields.Float(compute="_value_pc", store=True)
-#     description = fields.Text()
+    name = fields.Char()
+    value = fields.Integer()
+    value2 = fields.Float(compute="_value_pc", store=True)
+    description = fields.Text()
 #
 #     @api.depends('value')
 #     def _value_pc(self):
